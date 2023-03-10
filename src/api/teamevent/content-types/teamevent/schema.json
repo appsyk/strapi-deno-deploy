@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teamevents",
+  "info": {
+    "singularName": "teamevent",
+    "pluralName": "teamevents",
+    "displayName": "teamevent"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "event": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "photos": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
